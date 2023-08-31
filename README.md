@@ -4,22 +4,7 @@
 
 Projeto Trelo é uma iniciativa que visa criar uma plataforma com a ideia principal sendo a organização, o site funcionará envolta dessa ideia, tendo várias funções e ferramentas para organizar seu projeto, sendo algumas delas um sistema de etiquetas, organização em colunas e tudo isso sendo personalizado pelo usuário. O Trelo vai ser um site com a interface simples e direta, tendo colunas como base, onde o usuário pode alterar e muda-las do jeito que achar melhor. Esse site será feito para o uso de qualquer um que deseje, porém foi feito em mente para desenvolvedores e gestores de projetos.
 
-##Lista de funcionalidades que o projeto irá incoporar:
-Alterar Background: Deverá conter uma tabela para seleção de cores sólidas. Manter Task:
-
-Criar task;
-1. Adicionar Titulo e Descrição;
-2. Excluir task;
-3. Data de criação em cada card;
-
-Manter Coluna:
-
-Criar coluna;
-1. Podendo alterar título;
-2. Adicionar task;
-3. Botão que permita excluir a coluna inteira; Mover Coluna: Opção de mover as colunas dentro. Mover Task: Opção de mover as tasks entre as colunas.
-
-##Lista de funcionalidades que o projeto irá incoporar:
+## Lista de funcionalidades que o projeto irá incoporar:
 Alterar Background: Deverá conter uma tabela para seleção de cores sólidas. Manter Task:
 
 Criar task;
