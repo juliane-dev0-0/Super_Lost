@@ -10,5 +10,15 @@ Projeto Trelo é uma iniciativa que visa criar uma plataforma com a ideia princi
 2. João Pedro - Encarregado de organizar o tap e algumas participações;
 3. Guilherme Telles - Licitação de requisitos;
 4. Lucas Eduardo - Encarregado com diagrama de sequência baixa fidelidade do site e média com ajuda dos participantes do grupo
- 
-paputs
+
+## Lista de tecnologias utilizadas no projeto:
+-HTML 
+
+-CSS 
+
+-Trello 
+
+-Figma 
+
+-Miro
+
