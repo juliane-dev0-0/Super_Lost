@@ -68,3 +68,5 @@ div.style.display = div.style.display === 'block' ? 'none' : 'block';
 //nesse comando ele vai pegar a div e estilizar o display (bolinha colorida) onde se for 'block'
  ou seja, se torna vísivel (ele abre com as cores abaixo), se n for identico ao bloco ent vai ser 'none'
  , se for 'none' ele fecha o bloco, mantém somente a imagem da bolinha colorida  
+
+iosdviopnieorwnvioer
