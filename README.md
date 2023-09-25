@@ -37,7 +37,7 @@ Criar coluna;
 
 -Miro
 
-Código de Alteração de Background : Explicando o JAVASCRIPT
+## Código de Alteração de Background : Explicando o JAVASCRIPT
 
 function mudaFundo(event, cor) {
     document.body.style.backgroundColor = cor
