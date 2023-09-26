@@ -69,7 +69,7 @@ div.style.display = div.style.display === 'block' ? 'none' : 'block';
  ou seja, se torna vísivel (ele abre com as cores abaixo), se n for identico ao bloco ent vai ser 'none'
  , se for 'none' ele fecha o bloco, mantém somente a imagem da bolinha colorida  
 
-# CSS - 
+## CSS - 
 
     Exemplificação - No sistema é criado um elemento para alterção do body como /fontes/marge . 
     
