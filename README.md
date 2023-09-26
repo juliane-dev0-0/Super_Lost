@@ -69,4 +69,15 @@ div.style.display = div.style.display === 'block' ? 'none' : 'block';
  ou seja, se torna vísivel (ele abre com as cores abaixo), se n for identico ao bloco ent vai ser 'none'
  , se for 'none' ele fecha o bloco, mantém somente a imagem da bolinha colorida  
 
-iosdviopnieorwnvioer
+# CSS - 
+
+    Exemplificação - No sistema é criado um elemento para alterção do body como /fontes/marge . 
+    
+    *Background 
+    - opção de botão para alteração de fundo de tela;
+    - hover background : Ao passar pelo botão é alteradom sua cor;
+
+    cor_botões{
+
+        adicionado tamanho e altura sendo cada botão tendo sua respectiva cor e alteração de background ao ser sido selecionada a cor.
+    }
