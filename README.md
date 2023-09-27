@@ -81,3 +81,9 @@ div.style.display = div.style.display === 'block' ? 'none' : 'block';
 
         adicionado tamanho e altura sendo cada botão tendo sua respectiva cor e alteração de background ao ser sido selecionada a cor.
     }
+
+## HTML e Composição do codigo
+
+O html é a base desse sistema e o que serve de base para o css estilizar e o javascript dar funcionalidade. Dentro do HTML existem 2 div: Uma para dar funcionalidade ao pressionar o botão background(linha 21 a 35) e uma para dar funcionalidades aos botões cor-botao, que estão no color-menu(linha 25 a 34).
+O primeiro div faz com que todo o container de opções de cores no menu fiquem invisiveis ao usuário até o momento que ele clique no botão, permitindo ver e selecionar a cor do fundo.
+O segundo div atribui valores e estilos para todos os botões de selecionar cor, dando-os as instruções de o que fazer ao ser pressionado e como fazer.
