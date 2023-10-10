@@ -91,16 +91,24 @@ O segundo div atribui valores e estilos para todos os botões de selecionar cor,
  # O que cada um irá fazer
 
 > Background (JOAO)
+
 > Adicionar task	(Juliane)
+
 > add lista (Juliane)
+
 > Excluir coluna e task-CSS/html (Lucas)
+
 > Coluna pre programada ( To do, done e end)(Joao) 
 
 # js funcoes
 
 > add task (Lucas)
+
 > deletar task (Lucas)
+
 > função de task pre progrmada(joao)
+
 > prompt alerta deletar task / coluna (Juliane)
+
 > add lista (Joao)
 > cores preprogramadas (JULIANE)
