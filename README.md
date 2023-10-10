@@ -87,3 +87,20 @@ div.style.display = div.style.display === 'block' ? 'none' : 'block';
 O html é a base desse sistema e o que serve de base para o css estilizar e o javascript dar funcionalidade. Dentro do HTML existem 2 div: Uma para dar funcionalidade ao pressionar o botão background(linha 21 a 35) e uma para dar funcionalidades aos botões cor-botao, que estão no color-menu(linha 25 a 34).
 O primeiro div faz com que todo o container de opções de cores no menu fiquem invisiveis ao usuário até o momento que ele clique no botão, permitindo ver e selecionar a cor do fundo.
 O segundo div atribui valores e estilos para todos os botões de selecionar cor, dando-os as instruções de o que fazer ao ser pressionado e como fazer.
+
+ # O que cada um irá fazer
+
+> Background (JOAO)
+> Adicionar task	(Juliane)
+> add lista (Juliane)
+> Excluir coluna e task-CSS/html (Lucas)
+> Coluna pre programada ( To do, done e end)(Joao) 
+
+# js funcoes
+
+> add task (Lucas)
+> deletar task (Lucas)
+> função de task pre progrmada(joao)
+> prompt alerta deletar task / coluna (Juliane)
+> add lista (Joao)
+> cores preprogramadas (JULIANE)
