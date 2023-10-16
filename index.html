@@ -6,34 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trelo</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
 
-    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="/js/index.js"></script>
+
 
 </head>
 
-<body>
+<body >
+    <!-- form , textarea, input, label, onclick -->
+    <!-- document.addEventListener("DOMContentLoaded", function ()){
+        loadTasks(); espera o html carregar, aí é carregado as tarefas
+    } -->
+   
+    <div id="list">
+        <div id=new_task>
+        
+            <h2 id="afazer">A Fazer</h2>
+            <div id="todo_class" class="task">
+                <form class="formulario">
 
-    <header>
-        <h1>PROJETO TRELO</h1>
-    </header>
+                    <div id="title">
+                        
+                    </div>
+                </form>
+                    
+            </div>
+        </div>
+        
+        <button id="botao_addtask" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="align-self-center" onclick="limpacampos()">Adicionar Task</button>
+    </div>
 
-    <div id="color-menu-container">
-        <button id="background" onclick="background()">
-            <img src="/img/icon.png" alt="icone background">
-        </button>
-        <div id="color_menu">
-            <button class="cor-botao roxo" onclick="mudaFundo(event, '#6D377D')"></button>
-            <button class="cor-botao amarelo" onclick="mudaFundo(event, '#E6C643')"></button>
-            <button class="cor-botao rosa" onclick="mudaFundo(event, '#B0194E')"></button>
-            <button class="cor-botao vermelho" onclick="mudaFundo(event, '#E64A43')"></button>
-            <button class="cor-botao verde" onclick="mudaFundo(event, '#09E397')"></button>
-            <button class="cor-botao azula" onclick="mudaFundo(event, '#376F7D')"></button>
-            <button class="cor-botao azulb" onclick="mudaFundo(event, '#1992B0')"></button>
-
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="input_1" class="form-label">Título do Cartão:</label>
+                        <input type="email" class="form-control" id="input_1" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="area_descricao" class="form-label">Descrição do Card:</label>
+                        <textarea class="form-control" id="area_descricao" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-danger" id="btn_delete" data-bs-dismiss="modal">Deletar Task</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" onclick="add_task()" data-bs-dismiss="modal">Salvar</button>
+                </div>
+            </div>
         </div>
     </div>
 
+
+
+    <!-- modal exluir -->  
+
+    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="modalDeleteLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalDeleteLabel" >Deseja excluir permanentemente a task?</h1>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-danger" id="btn_modal_delete" data-bs-dismiss="modal">Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- <button id="coluna_botao"> <i class="fa-regular fa-plus"></i>  Adicionar Lista</button> -->
+  
+    <div class="colorMenu">
+        <div id="color-menu-container">
+
+            <button id="background" onclick="background()">
+              <img src="/img/icon.png" alt="icone background">
+            </button>
+
+            <div id="color_menu">
+                <button class="cor-botao roxo " onclick="mudaFundo('#6D377D')"></button>
+                <button class="cor-botao amarelo" onclick="mudaFundo('#E6C643')"></button>
+                <button class="cor-botao rosa" onclick="mudaFundo('#B0194E')"></button>
+                <button class="cor-botao vermelho" onclick="mudaFundo('#E64A43')"></button>
+                <button class="cor-botao verde" onclick="mudaFundo('#09E397')"></button>
+                <button class="cor-botao azula" onclick="mudaFundo('#376F7D')"></button>
+                <button class="cor-botao azulb" onclick="mudaFundo('#1992B0')"></button>
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
 
 
 </html>
