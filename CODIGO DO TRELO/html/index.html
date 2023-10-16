@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trelo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/js/index.js"></script>
+
+</head>
+
+<body>
+
+    <!-- form , textarea, input, label, onclick -->
+    <!-- document.addEventListener("DOMContentLoaded", function ()){
+        loadTasks(); espera o html carregar, aí é carregado as tarefas
+    } -->
+
+
+
+    <div id="columns">
+        <!-- <h2 id="afazer">A Fazer</h2>
+        <div id="todo_class" class="task" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <form class="formulario">
+                <div id="title">
+                    <label>Títilo</label>
+                    <input type="text" id="input_1" required>
+                    < <i class="fa-solid fa-trash"></i> 
+                </div>
+
+                <div>
+                    <label id="descricao">Descrição</label>
+                    <textarea name="Descrição" id="area_descricao" cols="30" rows="10"></textarea>
+                </div>
+
+                <button id="botao_add" type="button" onclick="addTask('todo')">Adicionar Task</button>
+            </form>
+        </div> -->
+
+        <h2 id="afazer">A Fazer</h2>
+        <div id="todo_class" class="task" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <form class="formulario">
+                <div id="title">
+                    <label>Título</label>
+                    <input type="text" id="input_1" required>
+                </div>
+            
+                <div>
+                    <label id="descricao">Descrição</label>
+                    <textarea name="Descrição" id="area_descricao" cols="30" rows="10"></textarea>
+                    <button id="botao_add" type="button" onclick="adicionarNovaTarefa()">Adicionar Task</button>
+                </div>
+            </form>
+            
+        </div>
+        
+        </div>
+        
+
+    </div>
+
+    <div    >
+        <!-- <button id="coluna_botao"> <i class="fa-regular fa-plus"></i>  Adicionar Lista</button> -->
+
+        <div id="color-menu-container">
+
+            <button id="background" onclick="background()">
+                <img src="/img/icon.png" alt="icone background">
+            </button>
+            <div id="color_menu">
+                <button class="cor-botao roxo" onclick="mudaFundo(event, '#6D377D')"></button>
+                <button class="cor-botao amarelo" onclick="mudaFundo(event, '#E6C643')"></button>
+                <button class="cor-botao rosa" onclick="mudaFundo(event, '#B0194E')"></button>
+                <button class="cor-botao vermelho" onclick="mudaFundo(event, '#E64A43')"></button>
+                <button class="cor-botao verde" onclick="mudaFundo(event, '#09E397')"></button>
+                <button class="cor-botao azula" onclick="mudaFundo(event, '#376F7D')"></button>
+                <button class="cor-botao azulb" onclick="mudaFundo(event, '#1992B0')"></button>
+
+            </div>
+        </div>
+
+
+
+
+</body>
+
+<script src="index.html"></script>
+
+
+
+
+</html>
