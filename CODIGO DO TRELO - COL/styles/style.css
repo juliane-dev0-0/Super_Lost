@@ -1,0 +1,402 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navTrelo
+{
+    /* background-color: #9db4d1; */
+    background: linear-gradient( to right , #081924, #3387b0db);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:#06394d solid 2px;
+    box-shadow: 0px 4px 9px #312d2d;
+}
+
+.colunas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 60em;
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+#botao_add {
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+#coluna_botao {
+
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 57px;
+
+    background-color: #ffffff;
+    border-radius: 15px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    padding: 17px 56px;
+    border: none;
+}
+
+.fa-regular {
+    position: absolute;
+    /* margin-right: 45px; */
+    margin-right: 110px;
+
+    color: #f6f6f6;
+
+}
+
+
+
+
+/* ALTERAR COR DO BACKGROUND */
+
+.colorMenu
+{
+    display: flex;
+    justify-content: flex-end;
+    
+} 
+
+
+#color-menu-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30%;
+    margin-right: 25%;
+
+}
+
+#color-menu-container>button,#color_menu>button{
+    width: 3em;
+    height: 3em;
+    margin-top: 20%;
+}
+
+#background {
+
+    display: flex;
+    flex-direction: flex-end;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    /* Cor de fundo do botão */
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+#background:hover {
+
+    background-color: #f5f5dc;
+    /* Cor de fundo do botão */
+    border: none;
+}
+
+
+
+/* BOTOES */
+.cor-botao {
+
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Espaçamento entre os botões */
+    transition: all 0.1s ease;
+    flex-direction: column;
+    /* Transição suave para a animação hover */
+    
+}
+
+.cor-botao:hover {
+    border: 1px double;
+    box-shadow: inset 0 0 20px #ffffff94, 0 0 20px #ffffff25;
+    width: 51px;
+    height: 51px;
+
+
+}
+/* fundo */
+.roxo {
+    background-color: #144659;
+}
+
+.amarelo {
+    background-color: #E5D287;
+}
+
+.rosa {
+    background-color: #B8514E;
+}
+
+.vermelho {
+    background-color: #E66E67;
+}
+
+.verde {
+    background-color: #5EE5A0;
+}
+
+.azula {
+    background-color: #376F7D;
+}
+
+.azulb {
+    background-color: #23A7B2;
+
+}
+
+/* card */
+.text-bg-success {
+   
+    background-color: #7D3747 !important;
+}
+
+.text-bg-success {
+    
+    background-color: #E6B143 !important;
+}
+
+.text-bg-success {
+    
+    background-color: #B03E19 !important;
+}
+
+.text-bg-success {
+    
+    background-color: #E66743 !important;
+}
+
+.text-bg-success {
+    
+    background-color: #08C243 !important;
+}
+
+.text-bg-success {
+    
+    background-color: #3A948E !important;
+}
+
+.text-bg-success {
+    
+    background-color: #2D6473 !important;
+}
+
+/* FIM BACKGROUND */
+
+
+/* colunas */
+#columns {
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
+    background-color: #f6f6f6;
+    /* margin-top: -93%; */
+    border-radius: 10px;
+    max-width: 30%;
+    max-height: 600px;
+    
+}
+
+.card
+{
+    width: 87%;
+}
+
+#espaco_card{
+   
+    width:350px;
+    height:200px;
+    background-color: #3A948E;
+    border-radius: 10px;
+
+}
+
+
+
+#afazer {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    max-height: max-content;
+    background-color: #3A948E;
+    font-size: 20px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    margin-top: -2%
+}
+
+#title {
+    display: flex;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#input_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    border-width: 1px;
+
+}
+
+#botao_add {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 30px;
+    background-color: #3A948E;
+    color: #ffffff;
+    border-radius: 10px;
+    justify-content: center;
+    border: none;
+    margin-left: 25%;
+    cursor: pointer;
+
+
+}
+
+#botao_add:hover {
+    background-color: #2c6f6b;
+}
+
+
+
+#descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textearea_descricao{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 8%;
+    margin-left: 8%;
+    max-height: 50%;
+    max-width: 80%;
+    resize: none;
+    
+    
+}
+
+#task_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    margin-top: 4%;
+    margin-left: 10%;
+    background-color: #3A948E;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#input_trash{
+    display: flex;
+    
+}
+
+.fa-trash{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+
+.fa-trash:hover{
+    cursor: grab;
+    opacity: 80%;
+    filter: drop-shadow(0 0px 12px #ff0000);
+    color: #b50b0b;
+
+
+   
+}
+.fa-trash:active{
+    cursor: grabbing;
+    opacity: 100%   ;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 135px;
+    background-color: #f6f6f6;
+    margin-top: 3%;
+    border-radius: 10px;
+    max-height: 600px;
+
+}
+
+.botao_addtask {
+    width: 80.000001%;
+    background-color: #3A948E;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.botao_addtask:hover {
+    background-color: #2c6f6b;
+    transition: 0.2s;
+    
+}
+
+
+/* drag n drop */
+
+
+.highlight {
+    background: #fd951f;
+  }
+  
+  .over {
+    background: #5a371363; 
+
+  }
+  
+  .card, .dropzones {
+    transition: all .2s;
+    
+  }
+  
+  .is-dragging {
+    opacity:0.3;
+   
+  }
+  
